@@ -1,0 +1,191 @@
+body {
+    font-family: 'Poppins','sans-serif';
+   
+}
+
+/* Grid Css */
+
+
+#heroGrid {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    height: 70vh;
+    grid-template-rows: 75% 25%;
+    grid-template-columns: 75% 25%;
+    grid-template-areas:
+    "featuredProduct secondaryProduct"
+    "featuredProduct CTA"
+}
+
+#featuredProduct {
+    grid-area: featuredProduct;
+    background-image: url("../images/livingRoom.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#secondaryProduct {
+    grid-area: secondaryProduct;
+    background-image: url("../images/chair.jpg");
+}
+#CTA {
+    grid-area: CTA;
+    background-image: url("../images/woodbg.jpg");
+    justify-content: space-around;
+    cursor: pointer; 
+} 
+#headline {
+    background-color: rgba(255, 255, 255, 0.653);
+    border-bottom:5px solid  #c54d03;
+    position: absolute;
+    right: 50%;
+    top: 100px;
+    padding: 25px;
+    max-width: 550px; 
+    z-index: 100;
+}
+
+.heroGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+/* Category Grid CSS */
+
+.subHeading {
+    text-align: center;
+    border-bottom: 2px solid black;
+    width: 300px;
+    margin: 50px auto;
+}
+#categoryGrid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "bookcases bedroom patio"
+    "couches couches pation"
+    "desks desks desks"
+    ;
+
+}
+#bookcases {
+    grid-area:bookcases;
+    background-image: url("../images/bookcase.jpg");
+}
+#bedroom {
+    grid-area:bedroom;
+    background-image: url("../images/bedroom.png");
+}
+#couches {
+    grid-area: couches;
+    background-image: url("../images/sitting.jpg");
+    background-repeat: no-repeat;
+}
+#patio {
+    grid-area: patio;
+    background-image: url("../images/patio.jpg");
+}
+#desks {
+    grid-area: desks;
+    background-image: url("../images/desks.jpg") ; 
+}
+
+.categaryGridArea {
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    margin: 10px;
+    cursor: pointer;
+    display: grid;
+    align-content: start;
+}
+.heading {
+
+    background-color: rgba(11, 11, 11, 0.7);
+    padding: 15px;
+    height:25px;
+    color: white;
+    font-size: 18px;
+    border-bottom-style: 20px soid #ed752a;
+}
+
+
+
+
+
+
+#navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+
+}
+#navBar h1{
+    width: 25%;
+    font-weight: 500;
+
+}
+ 
+#navigation {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#navigation p{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
+}
+
+.icons img{
+    margin: 15px;
+    cursor: pointer;
+    width: 50px;
+}
+
+.highlight{
+    color: #fc6203;
+    font-weight: 700;
+}
+
+/* Typography CSS */
+
+h2 {
+    font-size: 60px;
+    margin: 0px 0px; 
+    color: #FF6200;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 700px;
+    margin: 0px 0px;
+}
+h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 40px;  
+}
+#headline p {
+    max-width: 350px;
+    font-size:16px;
+    font-weight: 300px;
+    margin: 0px 0px;
+    color: #636364;
+}
