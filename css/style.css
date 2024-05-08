@@ -70,7 +70,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "bookcases bedroom patio"
-    "couches couches pation"
+    "couches couches patio"
     "desks desks desks"
     ;
 
@@ -87,20 +87,26 @@ body {
     grid-area: couches;
     background-image: url("../images/sitting.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 #patio {
     grid-area: patio;
     background-image: url("../images/patio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #desks {
     grid-area: desks;
-    background-image: url("../images/desks.jpg") ; 
+    background-image: url("../images/desks.jpg");
+   
+    background-size: 100% 100%;
 }
 
 .categaryGridArea {
     background-position: center; 
-    background-size: cover;
+   
     background-repeat: no-repeat; 
+    background-size: cover;
     margin: 10px;
     cursor: pointer;
     display: grid;
@@ -188,4 +194,24 @@ h4 {
     font-weight: 300px;
     margin: 0px 0px;
     color: #636364;
+} 
+
+#footerGrid {
+    margin: 0 5%;
+    display: grid;
+    grid-template-rows: 200px 200px 200px; 
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-areas:
+    "ContactUs MediaIcons PaymentOptions"
+   "OurSuccesses OurBranches OurHistory"
+   ;
+
+} 
+
+.footerGridArea{
+    background-position: center;
+    margin: 20px;
+    display: grid;
+    cursor: pointer;
+    align-content: center;
 }
